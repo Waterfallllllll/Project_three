@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.promo {
+    height: 800px;
+    background: url('../img/background_one.jpg') center center/cover no-repeat;
+    padding: 39px 0 62px 0;
+}
+
+/* cover - картинка растягивается под тот блок который необходимо установить */
+/* no-repeat - картинка не будет повторяться */
+/* center center - по x и по y картинка будет стоять в центре */
+/* ../ - Выход из папки */
+
+.logo .logo_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo .logo_text {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.title {
+    /* font-family: 'Roboto Black', sans-serif; */
+    font-size: 41px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f9bf3b;
+    text-align: center;
+}
+
+/* line-height - межстрочный интервал */
+
+.simple .title_big {
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 21px;
+}
+
+h1 {
+    margin-top: 53px;
+}
+
+h2.title {
+    margin-top: 30px;
+}
+
+.promo_text {
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 23px;
+    padding: 0 13px;
+}
+
+.promo_text span {
+    font-weight: 700;
+    color: #f9bf3b;
+}
+
+.promo_btn,
+.last .last_btn {
+    width: 321px;
+    height: 80px;
+    background-image: linear-gradient(0.0deg, #2798b9 0%, #3ab6da 100%);
+    border: 4px solid rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.17);
+    display: block;
+    margin: 69px auto;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* box-shadow - тень которую отбрасывает наш блок. inset - тень которая падает во внутрь. Второй 0px это смещение тени по оси x. -5px смещение тени по оси y. -5px - тень падает вверх, если бы было просто 5px она бы просто падала вниз. Третий ноль это размытие нашей тени. Чем больше этот показатель, тем сильнее размытость. */
+.last .last_btn {
+    margin-top: 52 px;
+}
+
+.more {
+    margin-top: 69px;
+}
+
+.more .more_text {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+}
+
+.more .more_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 13px;
+}
+
+.waiting {
+    min-height: 604px;
+    background-color: #efefef;
+    padding: 85px 0 75px 0;
+}
+
+.waiting .waiting_header,
+.learn .learn_header {
+    
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.learn .learn_header {
+    color: #efefef;
+}
+
+.waiting .waiting_divider,
+.learn .learn_divider {
+    width: 217px;
+    height: 4px;
+    background-color: #f9bf3b;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+
+.waiting .waiting_subheader {
+    font-family: Roboto;
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.waiting .waiting_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.waiting .waiting_wrapper .waiting_item {
+    width: 339px;
+    text-align: center;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+    width: 100%;
+}
+
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+    
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    color: #4A4A4A;
+    margin-top: 33px;
+}
+
+.optimization {
+    min-height: 547px;
+    padding: 101px 0px 105px 0px;
+}
+
+.optimization .optimization_header {
+    margin-left: 391px;
+    
+    font-size: 30px;
+    font-weight: 900;
+    font-style: normal;
+    color: #299CBD;
+    text-transform: uppercase;
+}
+
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+.optimization .optimization_text span {
+    font-weight: 700;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: -47px;
+    left: -240px;
+    z-index: -1;
+}
+
+.learn {
+    min-height: 447px;
+    background: url(../img/laptop_bg.jpeg) center center/cover no-repeat;
+    padding: 86px 0 79px 0;
+}
+
+.learn .learn_wrapper {
+    margin-top: 39px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn .learn_wrapper .learn_item {
+    width: 204px;
+}
+
+.learn .learn_wrapper .learn_item .learn_round {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background-color: #b4e2ff;
+    border-radius: 100%;
+}
+
+/* display: flex - ведёт себя как обычый блочный элемент. Свойства display:flex в большей степени влияет на потомка, который есть внутри этого эелемент */
+/*  border-radius: 100%; - квадрат превратится в круг. Это скругление углов в 100% */
+
+.learn .learn_wrapper .learn_item .learn_descr {
+    margin-top: 23px;
+    text-align: center;
+    
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #efefef;
+}
+
+.last {
+    min-height: 631px;
+    background-color: #efefef;
+    padding: 88px 0px 88px 0px;
+}
+
+.last .gift {
+    position: relative;
+    left: 493px;
+}
+
+.last .gift .gift_ribbon {
+    display: block;
+    margin-left: 33px;
+}
+
+.last .last_descr {
+    margin-top: 42px;
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: 400;
+    color: #252525;
+    text-align: center;
+}
+
+.web {
+    min-height: 512px;
+    padding: 88px 0px 62px 0px;
+}
+
+.web .web_wrapper {
+    position: relative;
+}
+
+.web .web_wrapper .web_screen {
+    position: absolute;
+    left: 444px;
+    top: 8px;
+}
+
+.web .web_wrapper .web_laptop {
+    display: block;
+    margin: 0 auto;
+}
+
+.web .first_web {
+    margin-top: 37px;
+    
+    font-size: 30px;
+    line-height: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #252525;
+    text-align: center;
+}
+
+.web .second_web {
+    margin-top: 30px;
+    
+    font-size: 36px;
+    line-height: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #299cbd;
+    text-align: center;
+}
+
+.web .third_web {
+    margin-top: 25px;
+    
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.end {
+    min-height: 169px;
+    background: rgba(26, 26, 26, 1);
+    padding: 63px 0 70px 0;
+}
+
+.end .end_descr {
+    text-align: center;
+}
+
+.end .footer_descr {
+    
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: #888888;
+}
+
+.end .footer_call {
+    text-decoration: none;
+    
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #888888;
+}
